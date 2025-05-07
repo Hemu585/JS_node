@@ -32,3 +32,26 @@ console.log(typeof bigNumber) // bigint
 console.log(typeof outsidetemp)//Object
 console.log(typeof myFunction) // Function(function object if specifically said)
 console.log(typeof heros) // Object
+
+
+
+//**********Memory*********
+
+// Stack(Primitive) , Heap(Non - Primitive)
+
+let myName = "Hemu"
+let anotherName = myName // anotherName will get copy of myName(as stack is used (primitive datatype))
+console.log(anotherName) // Hemu
+anotherName = "Hemang"
+console.log(anotherName) // Hemang
+
+let userOne = {
+    email : "user1@gmail.com",
+    upi : "user@upi"
+}
+
+let userTwo = userOne//not copy,original reference (heap - non-primitive datatype)
+userTwo.email = "hemang@gmail.com"
+console.log(userOne.email);
+
+console.log(userTwo.email);
