@@ -64,3 +64,41 @@ console.log(Object.values(tinderUser))// [ '123abc', 'Sammy', false ]
 console.log(Object.entries(tinderUser))// [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))// true
+
+const course = {
+    coursename : "JavaScript",
+    price : "999",
+    courseInstructor: "Hitesh"
+}
+
+//course.courseInstructor
+
+const {courseInstructor} = course
+console.log(courseInstructor) // Hitesh
+
+const {courseInstructor: instructor} = course // destructuring
+console.log(instructor) // Hitesh
+
+
+/*  for react not nodejs --
+const navbar = ({company}) => {
+
+}
+
+navbar(company = "hitesh")
+*/
+
+//*****JSON *******
+//{
+//    "name": "Hemang",
+ //   "coursename": "JavaScript",
+ //   "price": "free"
+//}
+//****//
+/*
+[
+    {},
+    {},
+    {},
+]
+    */
